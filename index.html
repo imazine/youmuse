@@ -8,172 +8,229 @@
 	<title>YOUMUSE beta - prototype</title>
 </head>
 <body>
-
-	<input type="checkbox" id="viewMenu" class="viewMenu">
+	<input type="radio" name="vrAction" id="viewMenu" class="fakeButton">
+	<input type="radio" name="vrAction" id="closeMenu" class="fakeButton">
+	<input type="radio" name="vrAction" id="fakeAction00" class="fakeButton" checked>
+	<input type="radio" name="vrAction" id="fakeAction01" class="fakeButton">
+	<input type="radio" name="vrAction" id="fakeAction02" class="fakeButton">
+	<input type="radio" name="vrAction" id="fakeAction03" class="fakeButton">
+	<input type="radio" name="vrAction" id="fakeAction04" class="fakeButton">
+	<input type="radio" name="vrAction" id="fakeAction05" class="fakeButton">
+	<input type="radio" name="vrAction" id="fakeAction06" class="fakeButton">
+	<input type="radio" name="vrAction" id="fakeAction07" class="fakeButton">
 
 	<nav class="menuButton">
 		<label for="viewMenu"><p class="icon-list menuBtn"> MENU</p></label>
 	</nav>
 
+	<label for="fakeAction00" class="cancelButton">
+		<section class="cancelLayer">
+		</section>
+	</label>	
+
 	<nav class="homeNav">
 		<ul>
 			<li><span class="logo">YOUMUSE</span><span class="logoBeta">beta</span></li>
-			<li>ALL</li>
-			<li>PERFORM</li>
-			<li>MUSIC</li>
-			<li>PARTY</li>
-			<li>DINNING</li>
+			<li><label for="fakeAction00">ALL</label></li>
+			<li><label for="fakeAction01">PERFORM</label></li>
+			<li><label for="fakeAction02">MUSIC</label></li>
+			<li><label for="fakeAction03">PARTY</label></li>
+			<li><label for="fakeAction04">DINNING</label></li>
 			<li></li>
-			<li class="icon-compass"> Near by</li>
-			<li class="icon-tag"> Recommend</li>
-			<li class="icon-lock"> Login</li>
+			<li class="icon-compass"><label for="fakeAction05"> Near by</label></li>
+			<li class="icon-tag"><label for="fakeAction06"> Recommend</label></li>
+			<li class="icon-lock"><label for="fakeAction07"> Login</label></li>
 		</ul>
 	</nav>
 
 	<section class="contentBox">
-		<article class="listBox">
-			<img src="/images/poster00.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">Nude Night</h2>
-			<p class="icon-location listElem location">서울문화회관 아트홀</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile01.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 312</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 32</span> 명이 참여합니다.</p>			
-		</article>
+<!-- ------------------------------------------------------ -->
+		<div class="all slideBox">
+			<article class="listBox">
+				<img src="./images/poster00.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">Nude Night</h2>
+				<p class="icon-location listElem location">서울문화회관 아트홀</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 312</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum testYam" id="testYam" data-number="22"></span> 명이 참여합니다.</p>			
+			</article>
 
-		<article class="listBox">
-			<img src="/images/poster04.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">EVENT #4</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile01.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>
-		</article>	
+			<article class="listBox">
+				<img src="./images/poster04.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">EVENT #4</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum testYam" id="testYam1" data-number="22"></span> 명이 참여합니다.</p>
+			</article>	
 
-		<article class="listBox">
-			<img src="/images/poster10.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">돐날</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile03.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">Heroro</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
-		</article>
+			<article class="listBox">
+				<img src="./images/poster10.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">돐날</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile03.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">Heroro</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
+			</article>
 
-		<article class="listBox">
-			<img src="/images/pster01.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">Whaum Chamber Ochestra 29st</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile02.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">ManaMana SoSo</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
-		</article>	
+			<article class="listBox">
+				<img src="./images/pster01.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">Whaum Chamber Ochestra 29st</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile02.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">ManaMana SoSo</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
+			</article>	
 
-		<article class="listBox">
-			<img src="/images/poster02.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">The Voice of Korea</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile02.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">ManaMana SoSo</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
-		</article>	
+			<article class="listBox">
+				<img src="./images/poster02.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">The Voice of Korea</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile02.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">ManaMana SoSo</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
+			</article>	
 
-		<article class="listBox">
-			<img src="/images/poster03.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">EVENT #3</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile01.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
-		</article>	
+			<article class="listBox">
+				<img src="./images/poster03.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">EVENT #3</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
+			</article>	
 
-		<article class="listBox">
-			<img src="/images/poster05.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">EVENT #5</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile01.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>
-		</article>	
+			<article class="listBox">
+				<img src="./images/poster05.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">EVENT #5</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>
+			</article>	
 
-		<article class="listBox">
-			<img src="/images/poster06.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">EVENT #6</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile01.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>	
-		</article>	
+			<article class="listBox">
+				<img src="./images/poster06.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">EVENT #6</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>	
+			</article>	
 
-		<article class="listBox">
-			<img src="/images/poster07.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">EVENT #7</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile01.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>	
-		</article>	
+			<article class="listBox">
+				<img src="./images/poster07.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">EVENT #7</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>	
+			</article>	
 
-		<article class="listBox">
-			<img src="/images/poster08.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">EVENT #8</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile01.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>
-		</article>	
+			<article class="listBox">
+				<img src="./images/poster08.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">EVENT #8</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>
+			</article>	
 
-		<article class="listBox">
-			<img src="/images/poster09.jpg" alt="" class="listImg" >
-			<h2 class="listElem listTitle">EVENT #9</h2>
-			<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
-			<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
-			<div class="listElem who">
-				<img src="/images/profile01.jpg" alt="" class="whoImg">
-				<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
-			</div>
-			<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
-			<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>
-		</article>	
+			<article class="listBox">
+				<img src="./images/poster09.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">EVENT #9</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>
+			</article>
+		</div>
 
+<!-- ------------------------------------------------------ -->
+		<div class="perform slideBox">
+			<article class="listBox">
+				<img src="./images/poster00.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">Nude Night</h2>
+				<p class="icon-location listElem location">서울문화회관 아트홀</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 312</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 32</span> 명이 참여합니다.</p>			
+			</article>
+
+			<article class="listBox">
+				<img src="./images/poster10.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">돐날</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile03.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">Heroro</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>			
+			</article>
+
+			<article class="listBox">
+				<img src="./images/poster09.jpg" alt="" class="listImg" >
+				<h2 class="listElem listTitle">EVENT #9</h2>
+				<p class="icon-location listElem location">부산문화회관 아트홀 컨벤션</p>
+				<p class="icon-clock listElem period"> 2013 07. 03 PM: 08:00</p>
+				<div class="listElem who">
+					<img src="./images/profile01.jpg" alt="" class="whoImg">
+					<p class="whoDesc"><span class="whoName">YUMI</span>님이 주최합니다.</p>
+				</div>
+				<p class="icon-thumbs-up listElem likes"><span class="likesNum"> 5,123</span> 명이 가고싶어합니다.</p>
+				<p class="icon-users listElem joins"><span class="joinsNum"> 232</span> 명이 참여합니다.</p>
+			</article>
+		</div>
 	</section>
 </body>
 </html>

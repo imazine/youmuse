@@ -90,6 +90,9 @@ body{
 	background-color: #333;
 }
 
+.fakeButton{
+	display: none;
+}
 
 /*Navigation*/
 .homeNav{
@@ -103,7 +106,7 @@ body{
 	height: 100%;
 	width: 240px;
 	z-index: 1000;
-	box-shadow: 0 0 14px 8px rgba(0,0,0,0.6);
+	/*box-shadow: 0 0 14px 8px rgba(0,0,0,0.6);*/
 	-webkit-transition: all .3s ease;
 }
 
@@ -147,38 +150,78 @@ body{
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: 1200;
+	z-index: 998;
 	padding: 14px 10px;
 	background-color: #eee;
 }
 
-.viewMenu:checked ~ .homeNav{
+#viewMenu:checked ~ .homeNav{
 	left: 0;
 }
 
-.viewMenu:checked ~ .menuButton .menuBtn{
-	background-color: #999;
+#viewMenu:checked ~ .contentBox{
+	height: auto;
+	-webkit-filter: blur(4px);
+	overflow: hidden;
 }
 
-.viewMenu:checked ~ .contentBox{
-	height: auto;
-	overflow: hidden;
+#viewMenu:checked ~ .cancelButton .cancelLayer{
+	z-index: 999;
+}
+
+#viewMenu:checked ~ .contentBox .all{
+	width: 320px;
+	left: 0;
+	z-index: 900;
+	display: block;
+}
+#fakeAction00:checked ~ .contentBox .all,
+#fakeAction01:checked ~ .contentBox .perform,
+#fakeAction02:checked ~ .contentBox .music,
+#fakeAction03:checked ~ .contentBox .party,
+#fakeAction04:checked ~ .contentBox .dinning,
+#fakeAction05:checked ~ .contentBox .nearby,
+#fakeAction06:checked ~ .contentBox .recommend,
+#fakeAction07:checked ~ .contentBox .login{
+	position: absolute;
+	top: 0;
+	width: 320px;
+	left: 0;
+	z-index: 900;
+	display: block;
+}
+
+.cancelLayer{
+	position: fixed;
+	top: 0;
+	opacity: 0.5;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
 }
 
 .contentBox{
 	display: block;
-	position: absolute;
-	top: 0;
+	margin: 0;
+	padding: 0;
 	width: 300px;
 	padding: 10px;
 	overflow-x: hidden;
-	background-color: #f0f0f0;
+	min-height: 568px;
 }
+	.slideBox{
+		left: 320px;
+		background-color: #e0e0e0;
+		display: none;
+	}
+
 	.listBox{
 		background-color: #fff;
 		padding: 10px;
 		color: #808080;
 		margin-bottom: 20px;
+		box-shadow: 0 4px 5px rgba(0,0,0,0.3);
 	}
 
 		.listImg{
@@ -256,3 +299,7 @@ body{
 			font-size: 16px;
 			font-weight: 700;
 		}
+
+.testYam:after{
+	content: attr(data-number);
+}
